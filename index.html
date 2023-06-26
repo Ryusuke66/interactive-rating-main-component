@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Rating state start -->
+    <div class="rate">
+      <div class="star">
+        <img src="images/icon-star.svg" alt="Star">
+      </div>
+      <div class="header">How did we do?</div>
+      <p> Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      <form name="form1" action="">
+        <input type="radio" name="rating" id="one">
+        <label for="one">1</label>
+        <input type="radio" name="rating" id="two">
+        <label for="two">2</label>
+        <input type="radio" name="rating" id="three">
+        <label for="three">3</label>
+        <input type="radio" name="rating" id="four">
+        <label for="four">4</label>
+        <input type="radio" name="rating" id="five">
+        <label for="five">5</label>
+      </form>
+      <button type="submit" form="form1" value="Submit" id="button">SUBMIT</button>
+    </div> 
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thanks">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <div class="selected"> </div>
+
+      <div class="thankyou">Thank you!</div>
+
+      <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don't hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </div>
+  
+  <div class="attribution">
+    Challenge by&nbsp; <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by&nbsp; <a href="https://www.frontendmentor.io/profile/Ryusuke66">Yassine Ghezal</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
